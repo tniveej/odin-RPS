@@ -8,13 +8,13 @@ function getComputerChoice() {
   return Math.floor(Math.random() * 3) + 1;
 }
 
-var humanScore = 0 , computerScore = 0 ;
+let humanScore = 0 , computerScore = 0 ;
 
 function playRound(humanChoice,computerChoice) {
   // 1 is rock, 2 is paper, 3 is scissors
   humanChoice = humanChoice.toLowerCase();
 
-  var human_int = 0;
+  let human_int = 0;
   switch (humanChoice) {
     case "rock":
       human_int= 1;
@@ -57,7 +57,7 @@ function playRound(humanChoice,computerChoice) {
     default:
       console.log("It's a draw")
   }
-  var score_text = ` Current Score \n
+  let score_text = ` Current Score \n
     You \t= ${humanScore}
     Computer \t= ${computerScore}
 `
